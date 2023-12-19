@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block head %}<style>
+
+  main {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 40px;
+  }
+
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #12533d;
+    border-color: #12533d;
+  }
+
+  .tab-content {
+    font-size: 16px;
+  }
+</style>
+{% endblock %}
+{% block main %}
+<main>
+  <div class="row">
+    <div class="col-4">
+      <div class="list-group" id="minhaLista" role="tablist">
+        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#sobre" role="tab">Sobre o
+          Sindicato</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#serve" role="tab">Para que serve o
+          Sindicato</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#funciona" role="tab">Como funciona
+          o nosso Sindicato</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#frentes" role="tab">Frentes de
+          trabalho</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#decisoes" role="tab">Como são
+          tomadas as decisões no SINPRO</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#abrangencia"
+          role="tab">Abrangência</a>
+
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content">
+        <div class="tab-pane active" id="sobre" role="tabpanel"><strong>Pela trajetória de luta do sindicalismo no
+            Brasil, não é difícil compreender o que é o Sindicato.</strong>
+          O Sindicato foi um espaço construído pelos próprios trabalhadores no desenvolvimento da história, apesar da
+          sua oficialização enquanto instituição pelo Estado. A simples existência de uma sede com seu corpo administrativo é insuficiente para conceituar o Sindicato.
+          Ele é muito mais do que isso.
+          Sociologicamente podemos afirmar que o Sindicato é o resultado da ação das massas organizadas em busca de
+          conquistas imediatas e profundas, como salário, emprego,
+          participação política, etc. A função do Sindicato é criar as condições para que, também, os trabalhadores
+          busquem sua afirmação enquanto "sujeito político autônomo",
+          capaz de forjar um projeto alternativo de sociedade.</div>
+        <div class="tab-pane" id="serve" role="tabpanel">Em síntese, o <strong>Sindicato</strong> serve para defender
+          os interesses da categoria e organizá-la para conquistas
+          coletivas em defesa de seus direitos e necessidades.</div>
+        <div class="tab-pane" id="funciona" role="tabpanel">Nosso Sindicato funciona com uma diretoria eletiva a cada
+          cinco anos, escolhida a partir de um programa
+          de trabalho. Essa diretoria se reúne para discutir o dia a dia do Sindicato, traçar e propor planos de
+          trabalho, de luta e seus encaminhamentos.</div>
+        <div class="tab-pane" id="frentes" role="tabpanel">Nosso Sindicato se divide em frentes de trabalho, tendo como
+          finalidade uma melhor organização e maior agilidade nos encaminhamentos. Imprensa e Comunicação;
+          Assistência, Saúde, Lazer e Cultura; Jurídico; Formação Sindical; Previdência; Assuntos Intersindicais e
+          Assuntos Parlamentares.</div>
+        <div class="tab-pane" id="decisoes" role="tabpanel">Todos os associados participam das assembleias, que são a
+          instância de decisão abaixo do Congresso que acontece a cada 3 anos. Outro nível de decisão é a Diretoria
+          efetiva para dirigir o SINPRO num período de cinco anos. Todo sindicalizado pode concorrer á eleição. Outra
+          forma de participar é como delegado sindical.</div>
+        <div class="tab-pane" id="abrangencia" role="tabpanel">Bauru, Águas de Santa Bárbara, Agudos, Arandu, Arealva,
+          Areiópolis, Avaí, Avaré, Bariri, Barra Bonita, Bocaina, Boracéia, Borebi, Botucatu, Cabrália Paulista,
+          Cerqueira César, Dois Córregos, Duartina, Espírito Santo do Turvo, Fartura, Igaraçu do Tietê, Ipaussu,
+          Itapuí, Itatinga, Lençóis Paulista, Macatuba, Manduri,
+          Mineiros do Tietê, Óleo, Pardinho, Paulistânia, Pederneiras, Piraju, Pirajuí, Piratininga, Pratânia,
+          Presidente Alves, São Manuel, São Pedro do Turvo, Sarutaiá,
+          Taguaí, Tejupá e Timburi.</div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
