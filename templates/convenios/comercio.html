@@ -1,0 +1,206 @@
+{% extends "layout.html" %}
+{% block head %}
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+
+        body {
+            
+            margin: 0 auto;
+            background-color: #d4f2cd;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .caixinha {
+            background-color: #edf7eb;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 5px;
+            max-width: 800px;
+            width: 100%;
+            border-top: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .caixinha:first-child {
+            margin-top: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        p {
+            margin: 0;
+            color: #555;
+        }
+
+        .caixinha h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .caixinha p {
+            margin-top: 5px;
+        }
+
+        .caixinha strong {
+            font-weight: bold;
+        }
+
+        .caixinha em {
+            font-style: italic;
+        }
+
+        .caixinha u {
+            text-decoration: underline;
+        }
+
+        .destacado {
+            color: #4c8a41;
+            margin-bottom: 0;
+            margin-top: 10px;
+            font-size: 1.17em;
+        }
+
+        .email-link {
+            color: #4c8a41;
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .desconto {
+            text-decoration: underline;
+        }
+
+        .site-link {
+            color: #4c8a41;
+            text-decoration: none;
+        }
+
+        .site-link:hover {
+            text-decoration: underline;
+        }
+
+        .botoes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .botao {
+            padding: 10px 20px;
+            font-size: 12px;
+            background-color: #4c8a41;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px 5px;
+            width: 10em;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .linha-botoes {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .linha-botoes .botao {
+            margin: 5px;
+            width: 150px;
+        }
+
+
+        .botao-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .botao:hover {
+            background-color: #396e34;
+            text-decoration: underline;
+        }
+    </style>
+    {% endblock %}
+    {% block main %}
+
+    <!--Principal-->
+    <main>
+        <h1 style="font-size: 3em; font-weight: bold; margin-top: 20px;">Comércio</h1>
+        <div class="caixinha">
+            <h2 style="font-size: 1.5em;">Para garantir a qualidade de vida associados e dependentes, o SINPROBAU mantêm convênios com diversas
+                empresas que oferecem descontos em produtos e serviços.</h2>
+            <p>Conheça abaixo os locais e empresas parceiras e desfrute dos benefícios!</p>
+        </div>
+        <div class="caixinha" id="comercio">
+            <h2>COMÉRCIO</h2>
+            <div class="comercio">
+                <h3 class="destacado">Ink Master</h3>
+                <p><strong>Suprimentos de impressão - cartuchos e toners</strong></p>
+                <p><strong>Endereço:</strong> Av. Nossa Senhora de Fátima, 6-67, Bauru, SP </p>
+                <p><strong>Telefone:</strong> (14) 3226-2527 </p>
+                <p><strong>Email:</strong> <a href="mailto:inkmaster@inkmaster.com.br" class="email-link">inkmaster@inkmaster.com.br</a></p>
+                <p><strong>Desconto:</strong> <u class="desconto"> 10% de desconto em recargas de cartuchos </u></p>
+            </div>
+            <div class="comercio">
+                <h3 class="destacado">Óptica Gold</h3>
+                <p><strong>Endereço:</strong> Rua Antonio Alves, 18-35, Centro, Bauru, SP </p>
+                <p><strong>Telefone:</strong> (14) 3227-0337 </p>
+                <p><strong>WhatsApp:</strong> (14) 99193-4443 </p>
+                <p><strong>Email:</strong> <a href="mailto:opticagold@uol.com.br" class="email-link">opticagold@uol.com.br</a></p>
+                <p><strong>Desconto:</strong> <u class="desconto"> 5% a 25% de desconto e parcelamentos no cartão em até 6x </u></p>
+            </div>
+            <div class="comercio">
+                <h3 class="destacado">Óptica Santa Luzia</h3>
+                <p><strong>Endereço:</strong> Praça Rui Barbosa, 2-80, Centro, Bauru, SP </p>
+                <p><strong>Telefone:</strong> (14) 3010-7509 </p>
+                <p><strong>WhatsApp:</strong> (14) 98228-2434 </p>
+                <p><strong>Email:</strong> <a href="mailto:osl.bauru@hotmail.com" class="email-link">osl.bauru@hotmail.com</a></p>
+                <p><strong>Desconto:</strong> <u class="desconto"> 5% a 70% de desconto e parcelamentos </u></p>
+            </div>
+            <div class="comercio">
+                <h3 class="destacado">Kasa Design</h3>
+                <p><strong>Loja especializada em pisos e revestimentos com experiência de 20 anos de marcado</strong></p>
+                <p><strong>Endereço:</strong> Rua Araújo Leite, 36-82, Jd. Aeroporto, Bauru, SP </p>
+                <p><strong>Telefone:</strong> (14) 3879-3005 - (14) 3879-3006 - (14) 3879-3007 </p>
+                <p><strong>Formas de pagamento:</strong> Cartão de crédito, débito, Construcard e boleto bancário </p>
+                <p><strong>Email:</strong> <a href="mailto:contato@kasadesign.com.br" class="email-link">contato@kasadesign.com.br</a></p>
+                <p><strong>Desconto:</strong> <u class="desconto"> Condições especiais e diferenciadas para associados </u></p>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+
+ 

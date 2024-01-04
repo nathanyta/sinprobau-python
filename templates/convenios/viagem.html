@@ -1,0 +1,187 @@
+{% extends "layout.html" %}
+{% block head %} 
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+
+        body {
+            
+            margin: 0 auto;
+            background-color: #d4f2cd;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .caixinha {
+            background-color: #edf7eb;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 5px;
+            max-width: 800px;
+            width: 100%;
+            border-top: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .caixinha:first-child {
+            margin-top: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        p {
+            margin: 0;
+            color: #555;
+        }
+
+        .caixinha h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .caixinha p {
+            margin-top: 5px;
+        }
+
+        .caixinha strong {
+            font-weight: bold;
+        }
+
+        .caixinha em {
+            font-style: italic;
+        }
+
+        .caixinha u {
+            text-decoration: underline;
+        }
+
+        .destacado {
+            color: #4c8a41;
+            margin-bottom: 0;
+            margin-top: 10px;
+            font-size: 1.17em;
+        }
+
+        .email-link {
+            color: #4c8a41;
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .desconto {
+            text-decoration: underline;
+        }
+
+        .site-link {
+            color: #4c8a41;
+            text-decoration: none;
+        }
+
+        .site-link:hover {
+            text-decoration: underline;
+        }
+
+        .botoes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .botao {
+            padding: 10px 20px;
+            font-size: 12px;
+            background-color: #4c8a41;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px 5px;
+            width: 10em;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .linha-botoes {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .linha-botoes .botao {
+            margin: 5px;
+            width: 150px;
+        }
+
+
+        .botao-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .botao:hover {
+            background-color: #396e34;
+            text-decoration: underline;
+        }
+    </style>
+    {% endblock %}
+{% block main %}
+    <!--Principal-->
+    <main>
+        <h1 style="font-size: 3em; font-weight: bold; margin-top: 20px;">Viagem</h1>
+        <div class="caixinha">
+            <h2 style="font-size: 1.5em;">Para garantir a qualidade de vida associados e dependentes, o SINPROBAU mantêm convênios com diversas
+                empresas que oferecem descontos em produtos e serviços.</h2>
+            <p>Conheça abaixo os locais e empresas parceiras e desfrute dos benefícios!</p>
+        </div>
+        <div class="caixinha" id="viagem">
+            <h2>VIAGEM</h2>
+            <div class="viagem">
+                <h3 class="destacado">Travel Visa Bauru</h3>
+                <p><strong>Endereço:</strong> Rua Minas Gerais, 3-40, Apto 44B, Vila Cardia, Bauru, SP </p>
+                <p><strong>Telefone:</strong> (14) 3010-6778 </p>
+                <p><strong>WhatsApp:</strong> (14) 99690-2539 </p>
+                <p><strong>Skype:</strong> alexandrecriscione </p>
+                <p><strong>Email:</strong> <a href="mailto:alexandrecriscione@gmail.com" class="email-link">alexandrecriscione@gmail.com</a></p>
+                <p><strong>Desconto:</strong> <u class="desconto"> 20% de desconto para assessoria em passaportes e vistos consulares (turismo, estudos e negócios) </u></p>
+            </div>
+            <div class="viagem">
+                <h3 class="destacado">Tobias Viagens</h3>
+                <p><strong>Endereço:</strong> Rua Gustavo Maciel, 21-80, Loja 09, Galeria 21 Center, Bauru, SP </p>
+                <p><strong>Telefone:</strong> (14) 3204-0499 - (14) 3204-0498 </p>
+                <p><strong>Email:</strong> <a href="mailto:rodoviario@tobiasviagens.com.br" class="email-link">rodoviario@tobiasviagens.com.br</a></p>
+                <p><strong>Desconto:</strong> <u class="desconto"> 10% de desconto </u></p>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+    

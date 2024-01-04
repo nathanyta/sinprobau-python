@@ -8,12 +8,12 @@
     content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
-  <link rel="icon" href="static/images/icon-spb.ico" type="image/x-icon">
+  <link rel="icon" href="/static/images/icon-spb.ico" type="image/x-icon">
   <!-- Stylesheets-->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/bootstrap.css">
-  <link rel="stylesheet" href="static/css/fonts.css">
-  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/css/fonts.css">
+  <link rel="stylesheet" href="/static/css/style.css">
   <style>
     .ie-panel {
       display: none;
@@ -36,7 +36,7 @@
 
 <body>
   <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
-        src="static/images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        src="/static/images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
         alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
   </div>
   <header class="section page-header">
@@ -59,7 +59,7 @@
               <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
               <!-- RD Navbar Brand-->
               <div class="rd-navbar-brand">
-                <!--Brand--><a class="brand" href="index.html"><img src="static/images/logo2.png" alt="logo" width="225"
+                <!--Brand--><a class="brand" href="index.html"><img src="/static/images/logo2.png" alt="logo" width="225"
                     height="18" /></a>
               </div>
             </div>
@@ -94,7 +94,7 @@
                 <li><a class="icon fa fa-instagram" href="https://www.instagram.com/sinprobau" target="_blank"></a></li>
               </ul>
               <!-- RD Navbar Nav-->
-              {% include "menu.html" %}
+              {% include "include/menu.html" %}
             </div>
           </div>
         </div>
@@ -102,10 +102,10 @@
     </div>
   </header>
   {% block main %} {% endblock %}
-  {% include "rodape.html" %}
+  {% include "include/rodape.html" %}
   <!-- Javascript-->
-  <script src="static/js/core.min.js"></script>
-  <script src="static/js/script.js"></script>
+  <script src="/static/js/core.min.js"></script>
+  <script src="/static/js/script.js"></script>
   {% block script %}{% endblock %}
 </body>
 
